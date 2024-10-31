@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <iomanip>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ int main() {
 	int array[10];
 	srand(static_cast<unsigned int>(time(0)));
 
-	cout << "Element in Array: ";
+	cout << "The random integers: ";
 
 	for (int i = 0; i < 10; i++) {
 
@@ -20,7 +21,9 @@ int main() {
 		
 	}
 
-	cout << "Even indices: ";
+	cout << endl;
+
+	cout << "Even indices: " << setw(11);
 
 	for (int even = 0; even < 10; even++) {
 
@@ -33,19 +36,22 @@ int main() {
 		}
 	}
 
-	cout << "Even values: ";
+	cout << endl;
+
+	cout << "Even values: " << setw(12);
 
 	for (int j = 0; j < 10; j++) {
-
-		
 
 		if (array[j] % 2 == 0) {
 
 			cout << array[j] << " ";
+			
 		}
 	}
 
-	cout << "Reversed order: ";
+	cout << endl;
+
+	cout << "Reversed order: " << setw(9);;
 
 	for (int reverse = 9; reverse >= 0; reverse--) {
 		
@@ -53,6 +59,8 @@ int main() {
 		
 	}
 
-	cout << "First and last: " << array[0] << " " << array[9];
+	cout << endl;
+
+	cout << "First and last: " << setw(9) << array[0] << " " << array[9];
 }
 
