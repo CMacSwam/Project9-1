@@ -9,37 +9,50 @@ int main() {
 	int array[10];
 	srand(static_cast<unsigned int>(time(0)));
 
+	cout << "Element in Array: ";
+
 	for (int i = 0; i < 10; i++) {
 
 		array[i] = rand() % 10000 + 1000;
 
-		cout << "Element in Array: ";
 		cout << array[i] << " ";
 
 		
 	}
+
+	cout << "Even indices: ";
+
 	for (int even = 0; even < 10; even++) {
 
-		cout << "Even indices: ";
+		
 
 		if (even % 2 == 0) {
 
-			cout << array[even];
+			cout << array[even] << " ";
 
 		}
 	}
+
+	cout << "Even values: ";
 
 	for (int j = 0; j < 10; j++) {
 
-		cout << "Even values: ";
+		
 
 		if (array[j] % 2 == 0) {
 
-			cout << array[j];
+			cout << array[j] << " ";
 		}
 	}
 
-	
+	cout << "Reversed order: ";
 
+	for (int reverse = 9; reverse >= 0; reverse--) {
+		
+		cout << array[reverse] << " ";
+		
+	}
+
+	
 }
 
