@@ -18,7 +18,17 @@ int main() {
 
 		
 	}
-	
+	for (int even = 0; even < 10; even++) {
+
+		cout << "Even indices: ";
+
+		if (even % 2 == 0) {
+
+			cout << array[even];
+
+		}
+	}
+
 
 }
 
