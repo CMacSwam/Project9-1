@@ -53,6 +53,6 @@ int main() {
 		
 	}
 
-	
+	cout << "First and last: " << array[0] << " " << array[9];
 }
 
