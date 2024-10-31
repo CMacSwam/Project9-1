@@ -29,6 +29,17 @@ int main() {
 		}
 	}
 
+	for (int j = 0; j < 10; j++) {
+
+		cout << "Even values: ";
+
+		if (array[j] % 2 == 0) {
+
+			cout << array[j];
+		}
+	}
+
+	
 
 }
 
